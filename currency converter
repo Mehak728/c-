@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double amount;
+    char choice;
+
+    cout << "Enter the amount in USD: ";
+    cin >> amount;
+
+    cout << "Choose the currency to convert to: " << endl;
+    cout << "E - Euro" << endl;
+    cout << "P - Pound" << endl;
+    cout << "Y - Yen" << endl;
+    cout << "C - Canadian Dollar" << endl;
+    cout << "I - Indian Rupee" << endl;
+    cout << "A - Australian Dollar" << endl;
+    cout << "Enter your choice: ";
+    cin >> choice;
+
+    switch (choice) {
+        case 'E':
+            cout << "Amount in Euro: " << amount * 0.88 << endl;
+            break;
+        case 'P':
+            cout << "Amount in Pound: " << amount * 0.77 << endl;
+            break;
+        case 'Y':
+            cout << "Amount in Yen: " << amount * 109.35 << endl;
+            break;
+        case 'C':
+            cout << "Amount in Canadian Dollar: " << amount * 1.26 << endl;
+            break;
+        case 'I':
+            cout << "Amount in Indian Rupee: " << amount * 74.91 << endl;
+            break;
+        case 'A':
+            cout << "Amount in Australian Dollar: " << amount * 1.31 << endl;
+            break;
+        default:
+            cout << "Invalid choice." << endl;
+    }
+
+    return 0;
+}
